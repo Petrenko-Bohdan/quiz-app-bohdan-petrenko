@@ -1,0 +1,26 @@
+.start-screen{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;		
+}
+
+.start-card{
+	width: 600px;
+	text-align: center;
+}
+
+mat-card-title{
+	display: flex;
+  justify-content: center;  
+  align-items: center;      
+  height: 100%;             
+  font-size: 24px;  
+	text-align: center;
+	padding-top: 20px;
+}
+
+button{
+	margin-top: 50px;
+} 
