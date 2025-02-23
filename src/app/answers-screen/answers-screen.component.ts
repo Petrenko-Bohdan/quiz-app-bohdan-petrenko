@@ -7,12 +7,13 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
 import { TranslateModule } from '@ngx-translate/core';
 import { LanguageService } from '../core/services/language.service';
+import { MatIconModule } from '@angular/material/icon';
 
 
 @Component({
   selector: 'app-answers-screen',
   standalone: true,
-  imports: [CommonModule, MatCardModule, MatButtonModule, MatListModule, TranslateModule],
+  imports: [CommonModule, MatCardModule, MatButtonModule, MatListModule, TranslateModule, MatIconModule],
   templateUrl: './answers-screen.component.html',
   styleUrl: './answers-screen.component.scss'
 })
@@ -31,6 +32,6 @@ selectedLanguage: string = '';
 	}
 
 	getCorrectAnswer(question: Question): string {
-		return question.answers.find(answer=>answer.correct)?.text['']||'';
+		return question.answers.find(answer=>answer.correct)?.text['pl']||'';
 	}
 }
