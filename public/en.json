@@ -1,0 +1,23 @@
+{
+  "HEADER": {
+    "LANGUAGE": "Language",
+		"HOME": "Go to start page"
+  },
+	"START-SCREEN": {
+		"TITLE": "Welcome to the Quiz",
+		"START": "Start Quiz"
+	},
+	"SUMMARY-SCREEN": {
+		"TITLE": "Summary",
+		"CORRECT": "Correct answers",
+		"INCORRECT": "Incorrect answers",
+		"WELL_DONE": "Well done! You got most of the answers right!",
+		"NOT_BAD": "Not bad! You got some answers right!",
+		"BETTER_LUCK": "Better luck next time! You got less than half of the answers right!",
+		"ANSWERS": "Go to answers"
+	},
+	"ANSWERS-SCREEN": {
+		"TITLE": "Answers",
+		"CORRECT-ANSWER": "Correct answer",
+		"YOUR-ANSWER": "Your answer"}
+}
