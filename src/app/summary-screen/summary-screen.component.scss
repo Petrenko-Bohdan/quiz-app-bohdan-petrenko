@@ -1,0 +1,38 @@
+.summary-card{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+mat-card{
+	padding: 50px;
+	width: 600px;
+	height: 400px;
+}
+
+mat-card-title{
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+mat-card-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 450px;
+}
+
+.messages{
+	text-align: center;
+}
+
+mat-card-actions{
+	display: flex;
+	justify-content: center;
+}
+
+button{
+	margin-top: 20px;
+}

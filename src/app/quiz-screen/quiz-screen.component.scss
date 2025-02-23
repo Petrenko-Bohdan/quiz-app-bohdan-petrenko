@@ -1,0 +1,32 @@
+.quiz-container{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 100vh;
+}
+
+mat-card{
+	padding: 50px;
+	width: 600px;
+	height: 400px;
+}
+
+mat-card-title{
+	margin-bottom: 20px;
+	height: 50px;
+}
+
+mat-card-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;	
+	height: 450px;
+}
+
+mat-radio-button{	
+	display: flex;
+}
+
+button{
+	margin-top: 20px;
+}
