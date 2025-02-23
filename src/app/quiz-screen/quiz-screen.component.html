@@ -1,0 +1,22 @@
+<div class="quiz-container" *ngIf="questions.length > 0">
+  <mat-card class="question-card">
+    <mat-card-title>
+      {{ questions[currentQuestionIndex].question[selectedLanguage] }}
+    </mat-card-title>
+
+    <mat-card-content class="question-content">
+      <mat-radio-group [(ngModel)]="selectedAnswer">
+        <mat-radio-button
+          *ngFor="let answer of questions[currentQuestionIndex].answers"
+          [value]="answer"
+        >
+          {{ answer.text[selectedLanguage] }}
+        </mat-radio-button>
+      </mat-radio-group>
+    </mat-card-content>
+
+    <button mat-button class="next-button" (click)="nextQuestion()" [disabled]="!selectedAnswer">
+      Next
+    </button>
+  </mat-card>
+</div>
