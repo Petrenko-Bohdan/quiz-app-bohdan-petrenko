@@ -1,0 +1,31 @@
+<div class="answers-container">
+  <div class="card">
+    <h2 class="answers_title">{{ 'ANSWERS-SCREEN.TITLE' | translate }}</h2>
+    <ul class="answers-list">
+      <li *ngFor="let answer of userAnswers" class="answer-item">
+        <p class="question-text">
+          <strong>{{ answer.question.question[selectedLanguage] }}</strong>
+        </p>
+
+        <p class="user-answer">
+          {{ 'ANSWERS-SCREEN.YOUR-ANSWER' | translate }}:
+          <span
+            [class.correct]="answer.isCorrect"
+            [class.wrong]="!answer.isCorrect"
+          >
+            <span *ngIf="answer.isCorrect" class="correct-icon">✔️</span>
+            <span *ngIf="!answer.isCorrect" class="wrong-icon">❌</span>
+            {{ answer.selectedAnswer.text[selectedLanguage] }}
+          </span>
+        </p>
+
+        <p *ngIf="!answer.isCorrect" class="correct-answer">
+          {{ 'ANSWERS-SCREEN.CORRECT-ANSWER' | translate }}:
+          <strong>{{ getCorrectAnswer(answer.question) }}</strong>
+        </p>
+
+        <div class="divider"></div> 
+      </li>
+    </ul>
+  </div>
+</div>
