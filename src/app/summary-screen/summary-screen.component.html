@@ -1,0 +1,14 @@
+<div class="summary-card">
+	<mat-card >
+		<mat-card-title>{{'SUMMARY-SCREEN.TITLE'|translate}}</mat-card-title>
+		<mat-card-content>
+			<p>{{'SUMMARY-SCREEN.CORRECT'|translate}}:{{ getCorrectAnswers() }}</p>
+			<p>{{'SUMMARY-SCREEN.INCORRECT'|translate}}: {{ getIncorrectAnswers() }}</p>				
+			<p class="messages">{{getResultText()}}</p>
+		</mat-card-content>
+		<mat-card-actions>
+			<button mat-button color="primary" (click)="goToAnswers()" >{{'SUMMARY-SCREEN.ANSWERS'|translate}}</button>
+		</mat-card-actions>
+	</mat-card>
+</div>
+
