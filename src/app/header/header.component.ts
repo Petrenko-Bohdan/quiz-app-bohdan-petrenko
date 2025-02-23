@@ -4,12 +4,13 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { TranslateModule } from '@ngx-translate/core';
 import { LanguageService } from '../core/services/language.service';
+import { MatButtonModule } from '@angular/material/button';
 
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [MatFormFieldModule, MatSelectModule, TranslateModule],
+  imports: [MatFormFieldModule, MatSelectModule, TranslateModule, MatButtonModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
