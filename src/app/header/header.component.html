@@ -1,0 +1,13 @@
+<div class="header">
+	<button mat-raised-button color="primary" (click)="goToStartScreen()">
+		{{ 'HEADER.HOME' | translate }}
+	</button>	
+	
+	<mat-form-field appearance="fill">
+		<mat-label>{{ 'HEADER.LANGUAGE' | translate }}</mat-label>
+		<mat-select [(value)]="selectedLanguage" (selectionChange)="switchLanguage($event.value)">
+			<mat-option value="en">English</mat-option>
+			<mat-option value="pl">Polski</mat-option>
+		</mat-select>
+	</mat-form-field>
+</div>
