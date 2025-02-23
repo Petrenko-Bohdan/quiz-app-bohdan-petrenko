@@ -1,0 +1,24 @@
+{
+  "HEADER": {
+    "LANGUAGE": "Język",
+		"HOME": "Przejdź do strony głównej"
+  },
+	"START-SCREEN": {
+		"TITLE": "Witaj w Quizie",
+		"START": "Rozpocznij quiz"
+	},
+	"SUMMARY-SCREEN": {
+		"TITLE": "Podsumowanie",
+		"CORRECT": "Poprawne odpowiedzi",
+		"INCORRECT": "Niepoprawne odpowiedzi",
+		"WELL_DONE": "Dobrze! Odpowiedziałeś poprawnie na większość pytań!",
+		"NOT_BAD": "Nieźle! Poprawne odpowiedzi na kilka pytań!",
+		"BETTER_LUCK": "Powodzenia następnym razem! Mniej niż połowa odpowiedzi była poprawna!",
+		"ANSWERS": "Przejdź do odpowiedzi"
+	},
+	"ANSWERS-SCREEN": {
+		"TITLE": "Odpowiedzi",
+		"CORRECT-ANSWER": "Poprawna odpowiedź",
+		"YOUR-ANSWER": "Twoja odpowiedź"
+	}
+}
