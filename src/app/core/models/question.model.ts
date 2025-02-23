@@ -1,5 +1,5 @@
 export interface Question {
 	id: number;
-	question: {en: string, pl: string};
-	answers: {text: {en: string, pl: string}, correct: boolean}[];
+	question: Record<string, string>;
+  answers: { text: Record<string, string>; correct: boolean }[];
 }
